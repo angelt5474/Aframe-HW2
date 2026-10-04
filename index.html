@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>A-Frame Homework 2 scene
+        </title>
+
+        <script src= "https://aframe.io/releases/1.8.0/aframe.min.js">    
+        </script>
+    </head>
+    <body> 
+        <a-scene> 
+
+            <a-sky
+            color="lightskyblue">
+            </a-sky>
+
+            <a-plane 
+            color="forestgreen"
+            position="0 0 0"
+            rotation="-90 0 0"
+            width="500"
+            height="500">
+            </a-plane>
+
+            <!-- walls -->
+
+            <a-mixin
+            id="Walls"
+            color="silver"
+            geometry="width:.15; height:7"
+            >
+            </a-mixin>
+
+            <a-box
+            mixin="Walls"
+            depth="7"
+            position="-5 3.5 -8"
+            >
+            </a-box>
+
+            <a-box
+            mixin="Walls"
+            depth="7"
+            position="5 3.5 -8"
+            >
+            </a-box>
+
+            <a-box
+            mixin="Walls"
+            depth="10.11"
+            position="0 3.5 -11.5"
+            rotation="0 90 0"
+            >
+            </a-box>
+
+            <a-box
+            mixin="Walls"
+            depth="2"
+            position="-4.075 3.5 -4.5"
+            rotation="0 90 0"
+            >
+            </a-box>
+
+            <a-box
+            mixin="Walls"
+            depth="2"
+            position="4.075 3.5 -4.5"
+            rotation="0 90 0"
+            >
+            </a-box>
+
+            <a-box
+            mixin="Walls"
+            height="2.1"
+            depth="7"
+            position="0 6 -4.5"
+            rotation="0 90 0"
+            >
+            </a-box>
+
+            <!-- Floor, roof and road -->
+
+            <a-box
+            color="gray"
+            width="10"
+            height=".5"
+            depth="8"
+            position="0 0 -7.5"
+            >
+            </a-box>
+
+             <a-box
+            color="gray"
+            width="10"
+            height=".5"
+            depth="1"
+            position="0 -0.16 -3.15"
+            rotation="22.5 0 0"
+            >
+            </a-box>
+
+            <a-box
+            color="gray"
+            width="12"
+            height=".2"
+            depth="10"
+            position="0 7 -8"
+            >
+            </a-box>
+
+             <a-plane 
+            color="gray"
+            position="0 0.01 0"
+            rotation="-90 0 0"
+            width="10"
+            height="10">
+            </a-plane>
+
+            <!-- Car body -->
+
+            <a-mixin
+            id="car"
+            color="red"
+            geometry="width: 3"
+            >
+            </a-mixin>
+
+            <a-box
+            mixin="car"
+            height="2.5"
+            depth="3.5"
+            position="0 1.75 -8"
+            >
+            </a-box>
+
+            <a-box
+            mixin="car"
+            height="1"
+            depth="2"
+            position="0 1 -6"
+            >
+            </a-box>
+
+            <a-box
+            color="silver"
+            height=".65"
+            width="1.25"
+            position="0 1 -5.45"
+            >
+            </a-box>
+
+            <!-- tires -->
+
+            <a-mixin
+            id="tires"
+            color="black"
+            geometry="radius: 0.5; height: 0.5"
+            rotation="0 0 90"
+            >
+            </a-mixin>
+
+            <a-cylinder
+            mixin="tires"
+            position="1.5 0.75 -5.75"
+            >
+            </a-cylinder>
+
+            <a-cylinder 
+            mixin="tires"
+            position="-1.5 0.75 -5.75"
+            >
+            </a-cylinder>
+
+            <a-cylinder
+            mixin="tires"
+            position="1.5 0.75 -8.75"
+            >
+            </a-cylinder>
+
+            <a-cylinder
+            mixin="tires"
+            position="-1.5 0.75 -8.75"
+            >
+            </a-cylinder>
+
+            <!-- lights -->
+
+            <a-sphere
+            color="yellow"
+            radius="0.15"
+            position="1.25 1.25 -5"
+            >
+            </a-sphere>
+
+            <a-sphere
+            color="black"
+            radius="0.15"
+            position="-1.25 1.25 -5"
+            >
+            </a-sphere>
+
+            <!-- windows-->
+
+            <a-plane
+            color="aqua"
+            width="2.65"
+            height="1.25"
+            position="0 2.2.5 -6.24"
+            >
+            </a-plane>
+
+            <a-plane
+            color="aqua"
+            width="1.5"
+            height="1.25"
+            position="1.52 2.2 -7.25"
+            rotation="0 90 0"
+            >
+            </a-plane>
+
+            <a-plane
+            color="aqua"
+            width="1.5"
+            height="1.25"
+            position="-1.52 2.2.5 -7.25"
+            rotation="0 -90 0"
+            >
+            </a-plane>
+
+            <a-plane
+            color="aqua"
+            width="2.65"
+            height="1.25"
+            position="0 2.2.5 -9.76"
+            rotation="0 180 0"
+            >
+            </a-plane>
+
+            <a-plane
+            width="3.65"
+            height="1.25"
+            position="0 6 -4.41"
+            >
+            </a-plane>
+
+            <a-text
+            value="Mechanic"
+            color="black"
+            position="-1.35 6 -4.4"
+            width="14"
+            >
+            </a-text>
+
+        </a-scene>
+    </body>
+</html>
